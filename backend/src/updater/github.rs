@@ -19,7 +19,7 @@ use serde::Deserialize;
 /// updater only ever points at this one repo. Keep the path components
 /// separate from the host so the host can be swapped in tests with a
 /// mock server URL.
-pub const RELEASES_PATH: &str = "/repos/sunshine-systems/streamcheats-core/releases";
+pub const RELEASES_PATH: &str = "/repos/stream-cheats/StreamCheats-Core/releases";
 pub const DEFAULT_API_BASE: &str = "https://api.github.com";
 
 /// Connection + read timeout. GitHub's responses are tiny and fast;
@@ -109,7 +109,7 @@ mod tests {
         let json = r#"{
             "tag_name": "v0.6.3",
             "name": "v0.6.3",
-            "html_url": "https://github.com/sunshine-systems/streamcheats-core/releases/tag/v0.6.3",
+            "html_url": "https://github.com/stream-cheats/StreamCheats-Core/releases/tag/v0.6.3",
             "prerelease": false,
             "draft": false,
             "assets": [
